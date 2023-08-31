@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="51" viewBox="0 0 112 51">
+  <g id="Group_20067" data-name="Group 20067" transform="translate(-1794.414 -182)">
+    <rect id="user_Background_" data-name="user (Background)" width="51" height="51" rx="25.5" transform="translate(1794.414 182)" fill="#593a89"/>
+    <g id="Group_10363" data-name="Group 10363" transform="translate(1806.243 194.243)">
+      <path id="Path_35092" data-name="Path 35092" d="M0,0H26.712V26.712H0Z" fill="none"/>
+      <path id="Path_35093" data-name="Path 35093" d="M24.26,14.129v7.792a1.113,1.113,0,0,1-1.113,1.113h-8.9V14.129Zm-12.243,0v8.905h-8.9A1.113,1.113,0,0,1,2,21.921V14.129H12.017ZM12.017,3v8.9H2V4.113A1.113,1.113,0,0,1,3.113,3Zm11.13,0A1.113,1.113,0,0,1,24.26,4.113V11.9H14.243V3Z" transform="translate(0.226 0.339)" fill="#fff"/>
+    </g>
+    <g id="user_Background_2" data-name="user (Background)" transform="translate(1855.414 182)" fill="rgba(0,0,0,0)" stroke="#ddd3e6" stroke-width="1" stroke-dasharray="0 0">
+      <rect width="51" height="51" rx="25.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="50" height="50" rx="25" fill="none"/>
+    </g>
+    <g id="Group_10366" data-name="Group 10366" transform="translate(1867.458 194.243)">
+      <path id="Path_35094" data-name="Path 35094" d="M0,0H26.712V26.712H0Z" fill="none"/>
+      <path id="Path_35095" data-name="Path 35095" d="M8.565,4.057H23.034V6.283H8.565ZM3,3.5H6.339V6.839H3Zm0,7.791H6.339V14.63H3Zm0,7.791H6.339v3.339H3Zm5.565-7.235H23.034v2.226H8.565Zm0,7.791H23.034v2.226H8.565Z" transform="translate(0.339 0.396)"/>
+    </g>
+  </g>
+</svg>

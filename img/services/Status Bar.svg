@@ -1,0 +1,47 @@
+<svg id="Status_Bar" data-name="Status Bar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="298.483" height="35.022" viewBox="0 0 298.483 35.022">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Shape" d="M338.123-26.667h13.266a2.123,2.123,0,0,1,2.123,2.123v4.776h0a2.123,2.123,0,0,1-2.123,2.123H338.123A2.123,2.123,0,0,1,336-19.768v-4.776h0A2.123,2.123,0,0,1,338.123-26.667Z" transform="translate(-336 26.667)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Shape-2" data-name="Shape" d="M359-23v3.184a1.727,1.727,0,0,0,1.057-1.592A1.727,1.727,0,0,0,359-23" transform="translate(-359 23)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Shape-3" data-name="Shape" d="M339.061-24.667h12.2a1.061,1.061,0,0,1,1.061,1.061v3.714h0a1.061,1.061,0,0,1-1.061,1.061h-12.2A1.061,1.061,0,0,1,338-19.891v-3.714h0A1.061,1.061,0,0,1,339.061-24.667Z" transform="translate(-338 24.667)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Shape-4" data-name="Shape" d="M321.772-24.857a6.877,6.877,0,0,1,4.738,1.893.245.245,0,0,0,.345,0l.92-.929a.256.256,0,0,0,.074-.182.256.256,0,0,0-.077-.181,8.674,8.674,0,0,0-12,0,.256.256,0,0,0-.077.181.256.256,0,0,0,.074.182l.92.929a.245.245,0,0,0,.345,0,6.878,6.878,0,0,1,4.739-1.893Zm0,3.021a3.906,3.906,0,0,1,2.622,1.011.247.247,0,0,0,.345,0l.919-.929a.257.257,0,0,0,.075-.183.257.257,0,0,0-.078-.182,5.7,5.7,0,0,0-7.762,0,.257.257,0,0,0-.078.182.257.257,0,0,0,.075.183l.919.929a.247.247,0,0,0,.345,0,3.905,3.905,0,0,1,2.62-1.011Zm1.766,2.216a.25.25,0,0,0,.075-.183.25.25,0,0,0-.082-.18,2.723,2.723,0,0,0-3.518,0,.25.25,0,0,0-.082.18.25.25,0,0,0,.075.184l1.59,1.6a.248.248,0,0,0,.176.074.248.248,0,0,0,.176-.074Z" transform="translate(-315.694 26.669)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <path id="Shape-5" data-name="Shape" d="M294.463-21.027h.8a.8.8,0,0,1,.8.8v1.592a.8.8,0,0,1-.8.8h-.8a.8.8,0,0,1-.8-.8v-1.592a.8.8,0,0,1,.8-.8Zm3.714-1.592h.8a.8.8,0,0,1,.8.8v3.184a.8.8,0,0,1-.8.8h-.8a.8.8,0,0,1-.8-.8v-3.184A.8.8,0,0,1,298.177-22.619Zm3.714-1.857h.8a.8.8,0,0,1,.8.8v5.041a.8.8,0,0,1-.8.8h-.8a.8.8,0,0,1-.8-.8V-23.68A.8.8,0,0,1,301.892-24.476Zm3.714-1.857h.8a.8.8,0,0,1,.8.8v6.9a.8.8,0,0,1-.8.8h-.8a.8.8,0,0,1-.8-.8v-6.9a.8.8,0,0,1,.8-.8Z" transform="translate(-293.667 26.333)" fill="none"/>
+    </clipPath>
+  </defs>
+  <path id="bg" d="M0-44H298.483V-8.978H0Z" transform="translate(0 44)" fill="#fff" opacity="0"/>
+  <g id="status_bar_light" data-name="status bar/light" transform="translate(15.919 11.939)">
+    <g id="Battery" transform="translate(251.522 1.857)">
+      <g id="Border" clip-path="url(#clip-path)">
+        <path id="Fill" d="M2.123,0H15.388a2.123,2.123,0,0,1,2.123,2.123V6.9h0a2.123,2.123,0,0,1-2.123,2.123H2.123A2.123,2.123,0,0,1,0,6.9V2.123H0A2.123,2.123,0,0,1,2.123,0Z" fill="none" stroke="rgba(0,0,0,0.35)" stroke-width="2"/>
+      </g>
+      <g id="Cap" transform="translate(18.307 2.919)" clip-path="url(#clip-path-2)">
+        <path id="Fill-2" data-name="Fill" d="M354-28h9.017v11.143H354Z" transform="translate(-357.98 24.02)" fill="rgba(0,0,0,0.4)"/>
+      </g>
+      <g id="Capacity" transform="translate(1.592 1.592)" clip-path="url(#clip-path-3)">
+        <path id="Fill-3" data-name="Fill" d="M333-29.667h22.287v13.8H333Z" transform="translate(-336.98 25.687)"/>
+      </g>
+    </g>
+    <g id="Wifi" transform="translate(235.359 1.855)">
+      <g id="Wifi-2" data-name="Wifi" transform="translate(0 0)" clip-path="url(#clip-path-4)">
+        <path id="Fill-4" data-name="Fill" d="M310.694-31.669h20.116v16.688H310.694Z" transform="translate(-314.673 27.69)"/>
+      </g>
+    </g>
+    <g id="Cellular_Connection" data-name="Cellular Connection" transform="translate(217.826 2.123)">
+      <g id="Cellular_Connection-2" data-name="Cellular Connection" transform="translate(0 0)" clip-path="url(#clip-path-5)">
+        <path id="Fill-5" data-name="Fill" d="M288.667-31.333h21.491v16.45H288.667Z" transform="translate(-292.646 27.354)"/>
+      </g>
+    </g>
+    <g id="Bars___Time_Black" data-name="Bars/_/Time Black" transform="translate(0)">
+      <path id="Background" d="M21-22.265H63.982V-35H21Z" transform="translate(-21 35)" fill="none"/>
+      <path id="_Time" data-name="↳ Time" d="M15.7,11.127c2,0,3.183-1.562,3.183-4.206a5.043,5.043,0,0,0-.555-2.481A2.783,2.783,0,0,0,15.74,2.89a2.73,2.73,0,0,0-2.916,2.759A2.514,2.514,0,0,0,15.408,8.26a2.171,2.171,0,0,0,2.035-1.175h.092c0,1.8-.68,2.867-1.828,2.867a1.366,1.366,0,0,1-1.377-.963h-1.4A2.646,2.646,0,0,0,15.7,11.127Zm.049-3.983A1.484,1.484,0,0,1,14.2,5.6a1.551,1.551,0,1,1,3.1.022A1.491,1.491,0,0,1,15.745,7.145Zm5.6,2.96a.86.86,0,1,0-.871-.86A.835.835,0,0,0,21.347,10.1Zm0-4.081a.83.83,0,0,0,.871-.854.871.871,0,1,0-.871.854Zm6.3,4.913H28.99V9.473h1.061V8.287H28.99v-5.2H27.009c-1.387,2.089-2.492,3.836-3.2,5.136V9.473h3.836Zm-2.536-2.7c.914-1.611,1.73-2.9,2.481-4.01h.076V8.32H25.11Zm8.159,2.7h1.4V3.086h-1.4L31.224,4.522V5.871L33.177,4.5h.092Z" transform="translate(-2.617 1.002)"/>
+    </g>
+  </g>
+</svg>

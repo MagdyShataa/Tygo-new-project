@@ -1,0 +1,13 @@
+{
+                "recommendations": [ "johnpapa.vscode-peacock",
+                        "figma.figma-vscode-extension",
+                        "esbenp.prettier-vscode",
+                        "formulahendry.auto-close-tag",
+                        "formulahendry.auto-complete-tag",
+                        "solnurkarim.html-to-css-autocompletion",
+                        "zignd.html-css-class-completion",
+                        "ritwickdey.liveserver",
+                        "mblode.pretty-formatter",
+                        "wenfangdu.snippet-generator"
+                        ]
+        }

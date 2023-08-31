@@ -1,0 +1,1328 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'FAMILY_NAME';
+    font-style: NORMAL_OR_ITALIC;
+    font-weight: NUMERIC_WEIGHT_VALUE;
+    font-display: swap;
+    src: url(FONT_FILE_NAME.woff2) format('woff2');
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    --unnamed-color-00000066: #00000066;
+    --unnamed-color-00000059: #00000059;
+    --unnamed-color-f6f2fa: #F6F2FA;
+    --unnamed-color-374053: #374053;
+   
+    --unnamed-color-7b7090: #7B7090;
+    --unnamed-color-a093b9: #A093B9;
+    --unnamed-color-00000000: #00000000;
+    --unnamed-color-845ecc: #845ECC;
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-e55ea2: #E55EA2;
+    --unnamed-color-3eb6ae: #3EB6AE;
+    --unnamed-color-f0eb5b: #F0EB5B;
+    --unnamed-color-593a89: #593A89;
+    --unnamed-color-6a7081: #38234a;
+    --unnamed-color-314559: #314559;
+    --unnamed-color-ff592c: #FF592C;
+    --unnamed-color-aeaeae: #AEAEAE;
+    --unnamed-color-fcfcfd: #FCFCFD;
+    --unnamed-color-833fe8: #833FE8;
+    --color-00000066: #00000066;
+    --color-00000059: #00000059;
+    --color-f6f2fa: #F6F2FA;
+    --color-374053: #374053;
+    --color-2f1952: #2F1952;
+    --color-7b7090: #7B7090;
+    --color-a093b9: #A093B9;
+    --color-00000000: #00000000;
+    --color-845ecc: #845ECC;
+    --color-ffffff: #FFFFFF;
+    --color-e55ea2: #E55EA2;
+    --color-3eb6ae: #3EB6AE;
+    --color-f0eb5b: #F0EB5B;
+    --color-593a89: #593A89;
+    --color-6a7081: #3ba97b;
+    --color-314559: #314559;
+    --color-ff592c: #FF592C;
+    --color-aeaeae: #AEAEAE;
+    --color-fcfcfd: #FCFCFD;
+    --color-833fe8: #833FE8;
+    --gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+    --black: #000;
+    --white: #ffffff;
+    --tell: #62B4AD;
+    --tell-1: #a4eee8;
+    --tell-2: #341245;
+    --color-3eb6ae-1: #9ac1d0;
+    --color-845ecc-1: #5f468f;
+    --color-2f1952: #2F1952;
+    --black-1: #000;
+    --color-aeaeae-1: #AEAEAE;
+    --color-7b7090-1: #5f2f5e;
+    --black-1: #080808;
+    --black-2: black;
+    --wite-1: white;
+    --wite-2: white;
+    --unnamed-color-2f1952-1: var(--unnamed-color-2f1952) --color-card:var(--color-ffffff);
+
+}
+body{
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: #16082c;
+    --black: white;
+    --color-3eb6ae-1: var(--color-845ecc-1);
+    --white: var(--black);
+    --black-1: var(--color-ffffff);
+    --color-aeaeae-1: #AEAEAE;
+    --color-7b7090-1: var(--color-ffffff) !important;
+    --black-1: var(--color-fcfcfd);
+    --black-2: var(--color-ffffff);
+    --wite-1: var(--unnamed-color-593a89);
+    --unnamed-color-2f1952-1: var(--color-ffffff);
+    --tell-2: var(--white);
+    --color-2f1952: white;
+    --color-card: var(--unnamed-color-6a7081)
+}
+
+/* utility class */
+.textColor {
+    color: var(--black)!important;
+}
+
+.textColor2 {
+    color: var(--color-2f1952);
+    font-size: 60px;
+    font-weight: 400 !important;
+}
+
+.mx-250 {
+    max-width: 286px;
+}
+
+.mx-300 {
+    max-width: 336px;
+}
+
+.mx-400 {
+    max-width: 400px;
+}
+
+.mx-500 {
+    max-width: 550px;
+}
+
+.mx-800 {
+    max-width: 847px;
+
+}
+
+.f-13 {
+    font-size: 13px;
+}
+
+.f-23 {
+    font-size: 23px;
+}
+
+.f-35 {
+    font-size: 35px;
+}
+
+.dark-mode .card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.bg-violet {
+    background-color: var(--color-593a89);
+}
+
+.dark-mode .right-arrow {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(15deg) brightness(103%) contrast(100%);
+}
+
+.text-special {
+    color: #3EB6AE;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.btn-light-green {
+    background-color: #EBF8F7;
+    color: #3EB6AE;
+    font-size: 14px;
+}
+
+.text-special span {
+    font-size: 30px;
+}
+
+.text-light-gray {
+    color: #7B7090;
+}
+
+.bg-pink {
+    background-color: var(--color-e55ea2);
+}
+
+.bg-yellow {
+    background-color: var(--color-f0eb5b);
+}
+
+.btn-load-more {
+    border: 1px solid var(--color-374053);
+}
+
+
+/* header */
+
+
+.nav-item .nav-link {
+    color: var(--black) !important;
+    
+}
+
+button svg {
+    background-color: var(--white) !important;
+    color: #000;
+} 
+
+.theme,
+.theme:hover {
+    background-color: #67f3ea;
+}
+
+.theme .theme-img {
+    background-color: var(--color-3eb6ae);
+    padding: 6px;
+    color: 19px;
+}
+
+.theme .theme-text,
+.theme .theme-text:hover {
+    color: var(--color-3eb6ae);
+}
+
+.login,
+.login:hover {
+    background-color: var(--color-3eb6ae);
+    color: var(--white);
+    font-size: 20px;
+}
+
+.dark-mode .theme {
+    background: rgba(167, 236, 241, 0.2);
+}
+
+.dark-mode .theme .theme-img {
+    background-color: white;
+
+}
+
+.dark-mode .theme .theme-img img {
+    filter: invert(9%) sepia(37%) saturate(4936%) hue-rotate(255deg) brightness(63%) contrast(95%);
+
+}
+
+.dark-mode .theme .theme-text {
+    color: white;
+}
+
+/*********************************** */
+
+
+.R-B {
+    background-image: url(./img/about/Union\ 7.svg);
+    background-repeat: no-repeat;
+    background-position-x: 500px;
+    background-size: contain;
+    position: relative;
+}
+
+.R-B-1 {
+    background-image: url(./img/home/Union\ 6.svg );
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+    background-size: contain;
+
+}
+
+
+.Stay {
+    font-size: 81px;
+    color: var(--color-2f1952) !important;
+    background: transparent url('img/Stay connected.png') 0% 0% no-repeat padding-box;
+}
+
+.Stay-1 {
+    font-size: 38px;
+    color: var(--black-1) !important;
+    opacity: .5;
+
+
+}
+
+.Stay-3 {
+
+    box-shadow: 0px 18px 30px #553D8415;
+}
+
+.textcolr-1 {
+    color: var(--color-aeaeae-1) !important;
+}
+
+.T-O {
+    color: var(--black-1) !important;
+}
+
+.IMG-1 {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 190px;
+    height: 119px;
+    
+
+}
+
+.IMG-2 {
+    position: absolute;
+    top:200px ;
+    left: 0;
+    width: 190px;
+    height: 139px;
+    opacity: 1;
+
+}
+
+.IMG-3 {
+    position: absolute;
+    top:450px ;
+    right:190px ;
+    width: 270px;
+    height: 119px;
+    opacity: 1;
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .IMG-1 {
+        position: absolute;
+        top: 200px;
+        right: -40px;
+        width: 150px;
+        height: 90px;
+    }
+}
+
+
+
+.IMG-CARD {
+    width: 40px;
+    height: 70px;
+
+}
+
+.A-BG {
+    background-color: var(--wite-1);
+}
+
+.BG-V {
+    background-color: #4e1d82;
+}
+
+.IMG-5 {
+    position: absolute;
+    bottom: 10%;
+
+    right: 10%;
+}
+
+.IMG-6 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.IMG-7 {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+
+.BG-R {
+    background-image: url(./img/home/Union\ 7.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 80%;
+}
+
+.SP-CO {
+    color: #E55EA2;
+}
+
+.BU-A {
+    background-color: #E55EA2;
+}
+
+.TOP-S {
+    color: var(--unnamed-color-2f1952-1) !important;
+}
+
+.SVG-IMG {
+    position: absolute;
+    right: -42%;
+    top: -19%;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.SVG-MQ {
+    position: absolute;
+    top: 23%;
+    right: 4%;
+}
+
+/*********************************** */
+/* about */
+.about {
+    margin-top: 95px;
+    background-image: url(./img/home/Union\ 6.svg), url(./img/about/Union\ 7.svg), url(./img/home/Union\ 7.svg);
+    background-repeat: no-repeat;
+    background-position-x: -317px, 0px, -127px;
+    background-position-y: -163px, 467px, 98%;
+}
+
+.about h2 {
+    font-size: 55px;
+    line-height: 1.6;
+}
+
+.our-story p {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 86%;
+}
+
+.image-parent {
+    position: relative;
+    z-index: 1;
+}
+
+.svg {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    top: 182.1px;
+    right: 124px;
+    z-index: 10;
+}
+
+.vision {
+    width: 600px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 130px 100px;
+    background-color: var(--color-f0eb5b);
+    border-radius: 10px;
+    margin-left: 60px;
+    position: relative;
+}
+
+.vision h2 {
+    color: black;
+}
+
+.pins {
+    position: absolute;
+    left: -27%;
+    top: 12%;
+}
+
+.vision h2 {
+    font-size: 50px;
+}
+
+.vision p {
+    font-size: 28px;
+}
+
+.misson {
+    margin-left: 0;
+    background-color: var(--color-3eb6ae);
+    color: white !important;
+}
+
+.misson h2 {
+    color: white;
+}
+
+.shape img {
+    background-color: var(--color-3eb6ae);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.shape2 {
+    margin-left: 70px;
+}
+
+.shape2 img {
+    background-color: var(--color-845ecc);
+    border-radius: 10px;
+    padding: 20px 10px 20px 30px;
+}
+
+.values {
+    height: 450px;
+    position: relative;
+}
+
+.shape3 img {
+    background-color: var(--color-f0eb5b);
+    border-radius: 10px;
+    padding: 26px 26px 0;
+}
+
+.control {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 150px 100px;
+    background-color: var(--color-e55ea2);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.btn-yellow {
+    background-color: var(--color-f0eb5b);
+    padding: 10px 32px;
+}
+
+.btn-yellow a {
+    color: var(--color-593a89);
+    font-weight: 600;
+}
+
+.control h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.value-shapes {
+    padding: 150px;
+}
+
+.content-text {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.content-text p {
+    color: #CCCDCF !important;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.triangles {
+    position: absolute;
+    right: -77px;
+    top: 111px;
+}
+
+.provider h2 {
+    color: var(--black);
+}
+
+.figure-caption {
+    color: var(--black) !important;
+    font-size: 30px !important;
+}
+
+/* Our services */
+.service {
+    background-image: url(./img/home/Union\ 6.svg), url(./img/about/Union\ 7.svg), url(./img/about/Union\ 6.svg), url(./img/home/Union\ 7.svg);
+    background-repeat: no-repeat;
+    background-position-x: -33px, -33px, -33px, -33px;
+    background-position-y: -163px, 467px, 74%, 116%;
+
+}
+
+.issuning.first {
+    margin-top: 85px;
+}
+
+.issuning h2 {
+    font-size: 55px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.issuning p {
+    font-size: 28px;
+    line-height: 1.6;
+    max-width: 74%;
+}
+
+.shapes {
+    position: relative;
+    margin-left: 150px;
+}
+
+.shapes .sim,
+.shapes .triangular {
+    position: absolute;
+    padding: 35px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.shapes .sim {
+    background-color: #FCE86D;
+    left: -155px;
+    top: 60px;
+}
+
+.shapes .triangular {
+    left: 51%;
+    top: 40%;
+}
+
+.shapes-compare {
+    margin-left: 126px;
+}
+
+.shapes .correct {
+    position: absolute;
+    top: 28%;
+    left: 17%;
+    z-index: 2;
+    background-color: var(--color-3eb6ae);
+    border-radius: 10px;
+}
+
+.shapes-compare .sim {
+    background-color: var(--color-e55ea2);
+}
+
+.shapes-compare .shape2 {
+    position: absolute;
+    top: 75%;
+    right: 10%;
+    z-index: -1;
+}
+
+.shapes.browesing .correct {
+    left: 37%;
+    top: 36%;
+    z-index: -1;
+    transform: rotate(90deg);
+}
+
+.shapes.browesing .sim,
+.shapes.preview .sim {
+    left: -183px;
+    top: 108px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.violet-mobile {
+    left: -100px !important;
+    top: 275px !important;
+}
+
+.violet-circle {
+    left: 110px !important;
+}
+
+.dots {
+    left: 47%;
+    top: 47%;
+}
+
+.circle {
+    left: 97px;
+    top: 122px;
+    z-index: 1;
+    padding: 12px;
+}
+
+.home .R-B {
+    background-image: url(./img/home/Union\ 6.svg), url(./img/about/Union\ 7.svg);
+    background-repeat: no-repeat;
+    background-position-x: -116px, 334px;
+    background-position-y: -163px, -257px;
+    background-size: auto;
+}
+
+/*********************************** */
+/*********************************** */
+/* blog */
+.blog {
+    background-image: url(./img/about/Union\ 7.svg );
+    background-repeat: no-repeat;
+    background-position-x: 120px;
+    background-position-y: -295px;
+    background-size: 83%;
+}
+
+
+
+.blog h1 {
+    font-size: 60px;
+    font-weight: 400 !important;
+}
+
+.blog-text {
+    background-color: var(--color-f6f2fa);
+    font-size: 13px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*********************************** */
+/* blog-page */
+.blog-page {
+    background-image: url(./img/home/Union\ 7.svg), url(./img/blogs/blog-detail/Union\ 5.svg), url(./img/home/Union\ 6.svg), url(./img/home/Union\ 6.svg);
+    background-repeat: no-repeat;
+    background-position-x: -49px, 72px, 171px, -219px;
+    background-position-y: 381px, 70%, 80%, 107%;
+    background-size: 81%, 36%, 81%, 81%;
+    ;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    margin: 0 !important;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    align-items: center;
+    height: 400px;
+}
+
+.small-card-text {
+    color: #6E6E6E;
+    font-size: 15px;
+}
+
+/*********************************** */
+/* waiting list */
+.waiting {
+    background-image: url(./img/about/Union\ 7.svg), url(./img/blogs/blog-detail/Union\ 5.svg), url(./img/home/Union\ 6.svg);
+    background-repeat: no-repeat;
+    background-position-x: -440px, 84%, -114px;
+    background-position-y: -316px, 13%, 250%;
+    background-size: 83%, 39%, 69%;
+}
+
+.waiting input {
+    height: 50px !important;
+}
+
+.waiting label,
+.interest {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.reasons {
+    height: 65px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px dashed #D9CCE6;
+    border-radius: 92px;
+    font-size: 22px;
+    color: #6A7081;
+}
+
+.sent {
+    height: 65px;
+    background: #3EB6AE 0% 0% no-repeat padding-box;
+    border-radius: 37px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.tri {
+    top: 46px;
+    left: 17%;
+}
+
+.violet-pin {
+    top: 29%;
+    right: 10%;
+}
+
+/*********************************** */
+/* footer */
+.subscribe {
+    border: 1px solid var(--tell-2) !important;
+}
+
+.icon-link {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 18px 30px #553d8433;
+    padding: 5px 9px;
+    margin: 0 5px;
+}
+
+.BG-C {
+    background-color: var(--color-card);
+}
+
+.R-B-3 {
+    background-image: url(./img/home/Union\ 7.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 179px;
+    background-size: contain;
+
+}
+
+.R-B-4 {
+    background-image: url(./img/home/Union\ 6.svg);
+    background-repeat: no-repeat;
+
+    background-position-x: -390px;
+    background-position-y: -80px;
+}
+
+.R-B-5 {
+    background-image: url(./img/home/Union\ 6.svg);
+    background-repeat: no-repeat;
+
+    background-position: right,
+
+
+
+}
+
+
+
+.IMG-8 {
+    position: absolute;
+    top: 120%;
+    right: -50%;
+}
+
+.IMG-9 {
+    position: absolute;
+    top: 60%;
+    right: -70%;
+}
+
+.IMG-10 {
+    position: absolute;
+    top: 10%;
+    left: -20%;
+}
+
+.IMG-11 {
+    position: absolute;
+    top: 10%;
+    left: -80%;
+}
+
+.union-6 {
+    background-image: url(./img/Union\ 6.svg), url(./img/Union\ 12.svg), url(./img/Union\ 13.svg);
+    background-size: auto;
+
+    background-position-x: -250px, 400px, -100px;
+    background-position-y: -350px, -450px, -10px;
+
+}
+
+.union-12 {
+    background-image: url(./img/Union\ 12.svg), url(./img/Union\ 15.svg);
+
+
+    background-position-x: -100px, 450px;
+    background-position-y: 72%, 390px;
+
+}
+
+.P-O {
+    color: #873998;
+    text-align: center;
+}
+
+
+.CARD-s {
+    position: absolute;
+    top: -250px;
+    left: 50px;
+    font-size: 24px;
+    width: 320px;
+}
+
+.CARD-s-1 {
+    position: absolute;
+    top: -250px;
+    left: 60px;
+    font-size: 24px;
+    width: 320px;
+}
+
+
+/*********************************** */
+
+/*@media/////////////////  */
+@media (max-width: 1491.98px) {
+ 
+}
+
+/* @media /////////////*/
+@media (max-width: 1024.98px) {
+ 
+
+    .FON-SI {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 0 !important;
+    }
+
+    .IMG-CARD {
+        width: 37px;
+        height: 60px;
+    }
+
+    .IMG-5 {
+        position: absolute;
+        bottom: 6%;
+        right: 6%;
+    }
+
+    .IMG-6 {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+
+    .IMG-7 {
+        position: absolute;
+        top: 46%;
+        left: 10%;
+    }
+
+    .SVG-MQ {
+        position: absolute;
+        top: 0;
+        right: 4%;
+    }
+
+    /* about */
+    .our-story p {
+        font-size: 15px;
+    }
+
+    .svg {
+        top: 69px;
+        right: 161px;
+    }
+
+    .vision {
+        margin-left: 0;
+    }
+
+    .shape2 {
+        margin-left: 211px;
+    }
+
+    .value-shapes {
+        padding: 140px 55px;
+    }
+
+    .control {
+        margin-top: 0;
+        padding: 80px 30px;
+
+    }
+
+    /* services */
+    .shapes {
+        margin-left: 15px;
+    }
+
+    .shapes .sim {
+        left: -78px;
+    }
+
+    .shapes .triangular {
+        left: 34%;
+    }
+
+    .shapes-compare .shape2 {
+        right: -5%;
+    }
+
+    .padding-l {
+        padding-left: 100px;
+    }
+
+    .FON-C {
+        font-size: 13px;
+    }
+
+    /* blog */
+    .big-card p {
+        font-size: 12px;
+    }
+
+    .blog-text {
+        padding: 3px;
+        margin-bottom: 3px;
+    }
+
+    /* waiting */
+    .tri {
+        left: 9%;
+    }
+
+    .violet-pin {
+        right: 0;
+    }
+
+    .CARD-s {
+        position: absolute;
+        top: -210px;
+        left: 30px;
+        font-size: 16px;
+        width: 250px;
+    }
+
+    .CARD-s-1 {
+        position: absolute;
+        top: -210px;
+        left: 40px;
+        font-size: 16px;
+        width: 250px;
+    }
+
+
+}
+
+/* @media//////////////////// */
+@media (max-width: 768.5px) {
+  
+
+    .FON-SI {
+        font-size: 17px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 18px;
+        padding-bottom: 0;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    .IMG-5 {
+        display: none;
+    }
+
+    .IMG-6 {
+        display: none;
+    }
+
+    .IMG-7 {
+        display: none;
+    }
+
+    .SVG-MQ {
+        position: absolute;
+        top: 30%;
+        right: 4%;
+    }
+
+    /* about */
+    .svg {
+        display: none;
+    }
+
+    .vision {
+        margin-left: -82px;
+    }
+
+    .value-shapes {
+        margin-top: 10px;
+    }
+
+    /* services */
+    /* services */
+    .issuning p {
+        max-width: 100%;
+    }
+
+    .shape-col {
+        order: 2;
+    }
+
+    .text-col {
+        order: 1;
+    }
+
+    .padding-l {
+        padding-left: 160px;
+    }
+
+    .shapes {
+        margin-left: 96px;
+        margin-bottom: 10px;
+    }
+
+    .padding-l {
+        padding-left: 10px;
+    }
+
+    .home .IMG-1,
+    .home .IMG-2 {
+        display: none;
+    }
+
+    .IMG-15,
+    .IMG-8,
+    .IMG-9,
+    .IMG-10,
+    .IMG-11 {
+        display: none;
+    }
+
+    /* waiting */
+    .tri {
+        display: none;
+    }
+
+    .violet-pin {
+        display: none;
+    }
+
+    .CARD-s {
+        position: absolute;
+        top: -260px;
+        left: 14px;
+        font-size: 12px;
+        height: 250px;
+        width: 210px;
+        font-size: 14px;
+    }
+
+    .CARD-s-1 {
+        position: absolute;
+        top: -260px;
+        left: 15px;
+        font-size: 12px;
+        height: 250px;
+        width: 210px;
+        font-size: 12px;
+    }
+
+}
+
+/* @media/////////////////// */
+@media (max-width: 600px) {
+    .navbar-brand {
+        margin-left: 1px;
+        padding-left: 0;
+    }
+
+    .IMG-1 {
+        display: none;
+    }
+
+    .IMG-3 {
+        display: none;
+    }
+
+    .IMG-2 {
+        display: none;
+    }
+
+    .IMG-4 {
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    .SVG-MQ {
+        display: none;
+    }
+
+    /* about */
+    .vision {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .pins {
+        display: none;
+    }
+
+    .misson {
+        margin-bottom: 10px;
+
+    }
+
+    .shape2 {
+        margin-bottom: 20px;
+    }
+
+    .triangles {
+        display: none;
+    }
+
+    .values h2 {
+        font-size: 50px;
+    }
+
+    .control h2 {
+        font-size: 45px;
+    }
+
+    .control button {
+        width: 100% !important;
+    }
+
+    .provider-logo {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* services */
+    .shapes .triangular {
+        left: -32%;
+        top: 44%;
+    }
+
+    .shapes-compare .shape2 {
+        right: 72%;
+    }
+
+    .shapes.browesing .correct {
+        left: -34%;
+        transform: rotate(0deg);
+    }
+
+    .shape-col {
+        order: 2;
+    }
+
+    .text-col {
+        order: 1;
+    }
+
+    .service,
+    .home .R-B {
+        background: none;
+    }
+
+    .issuning.first {
+        margin-top: 0px;
+    }
+
+    .lead {
+        font-size: 15px !important;
+    }
+
+    /* waiting list */
+    .textColor2 {
+        font-size: 40px;
+    }
+
+    .reasons {
+        font-size: 14px;
+    }
+
+    .CARD-s {
+        display: none;
+
+    }
+
+    .CARD-s-1 {
+        display: none;
+
+    }
+    .Stay {
+        font-size: 41px;
+        color: var(--color-2f1952) !important;
+        background: transparent url('img/Stay connected.png') 0% 0% no-repeat padding-box;
+    }
+}
+
+/* @media//////////////////// */
+
+.navbar-nav .nav-item {
+    padding: 1px 4px 1px 3px;
+    margin-left: 2px;
+}
+@media (min-width: 1025px) {
+    .nav-item{
+        padding:2px 2px 2px 2px ; 
+        margin:0px 2px 0px 2px ;
+        font-size:20px ;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-item{
+        padding:2px 2px 2px 2px ; 
+        margin:0px 2px 0px 2px ;
+        font-size:18px ;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 810px) {
+    .nav-item{
+        padding:2px 0px 2px 0px ; 
+        margin:0px 0px 0px 0px ;
+        font-size:16px ;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
