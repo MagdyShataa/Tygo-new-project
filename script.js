@@ -1,14 +1,26 @@
 //////////////////
 ////////////////
 //////////////////
+$("#main").toggleClass(localStorage.toggled);
 
 
 
 
+function myFunction() {
 
+    var element = document.body;
+    element.classList.toggle("dark-mode");
 
-
-
+    const x = document.getElementById("theme");
+    if (x.innerHTML === "light") {
+        x.innerHTML = "DARK";
+    } else {
+        x.innerHTML = "light";
+    }
+    localStorage.setItem("darkmode", "dark-mode");
+    document.body = localStorage.getItem("darkmode");
+    darkLight();
+};
 
 
 
@@ -37,25 +49,3 @@ const swiper = new Swiper('.swiper', {
         prevEl: ".swiper-button-prev ",
     },
 })
-
-
-
-function toggleDark() {
-    const container = document.body;
-    const dataTheme = container.getAttribute("data-theme");
-    let theme = localStorage.getItem("data-theme");
-
-    if (dataTheme === "light") {
-        container.setAttribute("data-theme", "dark");
-        document.getElementById("night").style.display = "block";
-        document.getElementById("light").style.display = "none";
-        localStorage.toggled("data-theme", "dark");
-
-    } else {
-
-        container.setAttribute("data-theme", "light");
-        document.getElementById("night").style.display = "none";
-        document.getElementById("light").style.display = "block";
-        localStorage.setItem("data-theme", "light");
-    }
-}

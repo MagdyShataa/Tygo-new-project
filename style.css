@@ -10,16 +10,16 @@ html {
     font-display: swap;
     src: url(FONT_FILE_NAME.woff2) format('woff2');
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     --unnamed-color-00000066: #00000066;
     --unnamed-color-00000059: #00000059;
     --unnamed-color-f6f2fa: #F6F2FA;
     --unnamed-color-374053: #374053;
-   
     --unnamed-color-7b7090: #7B7090;
     --unnamed-color-a093b9: #A093B9;
     --unnamed-color-00000000: #00000000;
@@ -37,7 +37,7 @@ body {
     --unnamed-color-833fe8: #833FE8;
     --color-00000066: #00000066;
     --color-00000059: #00000059;
-    --color-f6f2fa: #F6F2FA;
+    --color-f6f2fa: #f5f4f6;
     --color-374053: #374053;
     --color-2f1952: #2F1952;
     --color-7b7090: #7B7090;
@@ -59,7 +59,12 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: system, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    background: var(--bg-color);
     --black: #000;
     --white: #ffffff;
     --tell: #62B4AD;
@@ -75,12 +80,22 @@ body {
     --black-2: black;
     --wite-1: white;
     --wite-2: white;
-    --unnamed-color-2f1952-1: var(--unnamed-color-2f1952) --color-card:var(--color-ffffff);
+    --unnamed-color-2f1952-1: var(--unnamed-color-2f1952);
+    --color-card: var(--color-f6f2fa);
 
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    transition: all 1s ease-in-ou;
+    transition-delay: 0s !important;
+    -webkit-transition: all 1s ease-in-ou;
+    -moz-transition: all 1s ease-in-ou;
+    -ms-transition: all 1s ease-in-ou;
+    -o-transition: all 1s ease-in-ou;
+    --wite-3: white;
+    --wite-4: white;
 }
-body{
-    background-color: white;
-}
+
+
 
 .dark-mode {
     background-color: #16082c;
@@ -96,12 +111,25 @@ body{
     --unnamed-color-2f1952-1: var(--color-ffffff);
     --tell-2: var(--white);
     --color-2f1952: white;
-    --color-card: var(--unnamed-color-6a7081)
+    --color-card: var(--unnamed-color-6a7081);
+    --wite-3: rgb(21, 84, 99);
+    --wite-4: rgb(106, 214, 250);
+
 }
+
+button {
+
+    cursor: pointer;
+}
+
+
+
+
 
 /* utility class */
 .textColor {
-    color: var(--black)!important;
+    color: var(--black) !important;
+
 }
 
 .textColor2 {
@@ -189,24 +217,30 @@ body{
     border: 1px solid var(--color-374053);
 }
 
+.nav-item button {
+    font-family: monospace;
+    background-color: var(--wite-3) !important;
+
+}
+
+.nav-item button span {
+    font-family: monospace;
+    background-color: var(--wite-4) !important;
+    color: var(--black);
+    padding: 1px;
+}
 
 /* header */
 
 
 .nav-item .nav-link {
-    color: var(--black) !important;
-    
+    color: var(--black);
+
 }
 
-button svg {
-    background-color: var(--white) !important;
-    color: #000;
-} 
 
-.theme,
-.theme:hover {
-    background-color: #67f3ea;
-}
+
+
 
 .theme .theme-img {
     background-color: var(--color-3eb6ae);
@@ -214,10 +248,7 @@ button svg {
     color: 19px;
 }
 
-.theme .theme-text,
-.theme .theme-text:hover {
-    color: var(--color-3eb6ae);
-}
+
 
 .login,
 .login:hover {
@@ -297,13 +328,13 @@ button svg {
     right: 0;
     width: 190px;
     height: 119px;
-    
+
 
 }
 
 .IMG-2 {
     position: absolute;
-    top:200px ;
+    top: 200px;
     left: 0;
     width: 190px;
     height: 139px;
@@ -313,24 +344,68 @@ button svg {
 
 .IMG-3 {
     position: absolute;
-    top:450px ;
-    right:190px ;
+    top: 450px;
+    right: 190px;
     width: 270px;
     height: 119px;
     opacity: 1;
 
 }
+@media (min-width: 600px) and (max-width: 778px) {
+    
+    .IMG-3 {
+        position: absolute;
+        top: 440px;
+        left: 190px;
+        width: 190px;
+        height: 139px;
+       
+    
+    }
+}
+
+
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .IMG-1 {
         position: absolute;
         top: 200px;
-        right: -40px;
+        right: -20px;
         width: 150px;
         height: 90px;
     }
+    .IMG-2 {
+        position: absolute;
+        top: 240px;
+        left: -40px;
+        width: 190px;
+        height: 139px;
+        opacity: 1;
+    
+    }
 }
-
+@media (min-width: 600px) and (max-width: 768px) {
+    
+    .IMG-2 {
+        position: absolute;
+        top: 240px;
+        left: -90px;
+        width: 190px;
+        height: 139px;
+        opacity: 1;
+    
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    .IMG-1 {
+        position: absolute;
+        top: 290px;
+        right: 25px;
+        width: 130px;
+        height: 70px;
+    }
+}
 
 
 .IMG-CARD {
@@ -905,13 +980,11 @@ button svg {
 /*********************************** */
 
 /*@media/////////////////  */
-@media (max-width: 1491.98px) {
- 
-}
+@media (max-width: 1491.98px) {}
 
 /* @media /////////////*/
 @media (max-width: 1024.98px) {
- 
+
 
     .FON-SI {
         font-size: 14px;
@@ -1041,7 +1114,7 @@ button svg {
 
 /* @media//////////////////// */
 @media (max-width: 768.5px) {
-  
+
 
     .FON-SI {
         font-size: 17px;
@@ -1155,7 +1228,7 @@ button svg {
 }
 
 /* @media/////////////////// */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .navbar-brand {
         margin-left: 1px;
         padding-left: 0;
@@ -1277,6 +1350,7 @@ button svg {
         display: none;
 
     }
+
     .Stay {
         font-size: 41px;
         color: var(--color-2f1952) !important;
@@ -1289,28 +1363,31 @@ button svg {
 .navbar-nav .nav-item {
     padding: 1px 4px 1px 3px;
     margin-left: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 @media (min-width: 1025px) {
-    .nav-item{
-        padding:2px 2px 2px 2px ; 
-        margin:0px 2px 0px 2px ;
-        font-size:20px ;
+    .nav-item {
+        padding: 2px 2px 2px 2px;
+        margin: 0px 2px 0px 2px;
+        font-size: 20px;
     }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
-    .nav-item{
-        padding:2px 2px 2px 2px ; 
-        margin:0px 2px 0px 2px ;
-        font-size:18px ;
+    .nav-item {
+        padding: 2px 2px 2px 2px;
+        margin: 0px 2px 0px 2px;
+        font-size: 18px;
     }
 }
 
 
 @media (min-width: 600px) and (max-width: 810px) {
-    .nav-item{
-        padding:2px 0px 2px 0px ; 
-        margin:0px 0px 0px 0px ;
-        font-size:16px ;
+    .nav-item {
+        padding: 2px 0px 2px 0px;
+        margin: 0px 0px 0px 0px;
+        font-size: 16px;
     }
 }
 
